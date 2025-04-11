@@ -3,10 +3,10 @@ import './App.css';
 
 const COLORS = ['green', 'red', 'yellow', 'blue'];
 const SOUNDS = {
-  green: '/sounds/green.aac',
-  red: '/sounds/red.aac',
-  yellow: '/sounds/yellow.aac',
-  blue: '/sounds/blue.aac',
+  green: 'sounds/green.aac',
+  red: 'sounds/red.aac',
+  yellow: 'sounds/yellow.aac',
+  blue: 'sounds/blue.aac',
 };
 const DIFFICULTIES = {
   1: { name: 'EASY', timeout: 800000 }, //8000
