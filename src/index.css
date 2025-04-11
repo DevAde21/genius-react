@@ -1,0 +1,24 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #181825;
+  color: white; /* Texto padrão branco */
+}
+
+/* Aplicar a fonte globalmente ou onde for necessário */
+body, h1, h2, button, h3, h4, h5, h6, p, div {
+  font-family: 'Jersey 15', sans-serif; /* Aplicar a fonte */
+  text-transform: uppercase; /* Sempre em caixa alta */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

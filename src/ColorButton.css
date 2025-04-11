@@ -1,0 +1,44 @@
+/* src/ColorButton.css */
+.color-button {
+    /* Remove estilos de botão padrão se estiver usando <div> */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* Transição para o efeito de piscar */
+    transition: filter 0.1s ease-in-out, transform 0.1s ease-in-out;
+    /* Garante que o botão preencha a célula do grid */
+    width: 100%;
+    height: 100%;
+    /* Adiciona uma borda sutil para separar visualmente */
+     border: 5px solid black;
+     box-sizing: border-box; /* Garante que a borda não aumente o tamanho */
+  }
+  
+  /* Cores base dos botões */
+  .btn-genius-green { background-color: #00A74A; } /* Verde */
+  .btn-genius-red { background-color: #9F0F17; } /* Vermelho */
+  .btn-genius-yellow { background-color: #CCA707; } /* Amarelo */
+  .btn-genius-blue { background-color: #094A8F; } /* Azul */
+  
+  /* Estilo quando o botão está piscando */
+  .color-button.flashing {
+    filter: brightness(1.8); /* Aumenta o brilho */
+    /* transform: scale(1.02); */ /* Leve aumento (opcional) */
+  }
+  
+  /* Estilos de Hover/Focus para feedback (opcional) */
+  .color-button:hover:not(.flashing) {
+   filter: brightness(1.2);
+  }
+  
+  .color-button:focus {
+    outline: 2px solid white; /* Destaque para acessibilidade */
+    outline-offset: -4px; /* Ajuste visual do outline */
+  }
+  
+  
+  /* Estilização específica para cantos arredondados no grid */
+  .genius-board > .btn-genius-green { border-top-left-radius: 100%; }
+  .genius-board > .btn-genius-red { border-top-right-radius: 100%; }
+  .genius-board > .btn-genius-blue { border-bottom-left-radius: 100%; }
+  .genius-board > .btn-genius-yellow { border-bottom-right-radius: 100%; }
